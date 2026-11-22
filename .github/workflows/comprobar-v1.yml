@@ -1,0 +1,25 @@
+name: Comprobar ERROR 2026 V1.0
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Compilar juego y verificar checksum oficial
+        working-directory: fuentes
+        run: |
+          python3 tools/build_error_2026.py
+          echo 'a74fb8ff17c40945e8edb22d9849537d6db884059f9420c3068a03386fa5de37  build/ERROR_2026_V1_0_48K.tap' | sha256sum -c -
+          python3 build.py
+          python3 tests/test_error2026.py
+          python3 tests/test_error2026_waves.py

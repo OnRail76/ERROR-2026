@@ -1,0 +1,7 @@
+{
+  "name": "GRIT ENGINE V0.2 DEMO",
+  "tap_filename": "GRIT_ENGINE_V03_DEMO_48K.tap",
+  "code_org": 32768,
+  "stack_top": 32752,
+  "description": "Motor 48K modular con estados, centinelas y regresiones; V0.1 preservada"
+}

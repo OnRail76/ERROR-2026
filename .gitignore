@@ -1,0 +1,6 @@
+# Generados locales / caché Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+fuentes/build/
+.DS_Store
