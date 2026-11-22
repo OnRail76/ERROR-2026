@@ -1,3 +1,5 @@
+![Carátula oficial de ERROR 2026 — Tony C. Ware](caratula/ERROR_2026_CARATULA_OFICIAL_ULTRA_HD.png)
+
 # ERROR 2026
 
 **2026… EL FUTURO** · Videojuego arcade para **ZX Spectrum 48K PAL** · **V1.0** · **Tony C. Ware**
